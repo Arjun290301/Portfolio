@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
-import './Project.css';
+import './project.css';
 
 const Project = () => {
     const [activeIndex, setActiveIndex] = useState(1);
