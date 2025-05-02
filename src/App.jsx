@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import About from './Components/about/About';
 import SkillIcon from './Components/skill/SkillIcon';
 import TimelineDemo from './Components/ui/TimelineDemo';
-import Project from './Components/Project/project';
+import Project from "./Components/Project/project";
 import FooterContact from './Components/FooterContact/FooterContact';
 import Navbar from './Components/NavBarComp/Navbar';
 
