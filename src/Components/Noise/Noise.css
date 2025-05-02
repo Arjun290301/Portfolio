@@ -1,0 +1,12 @@
+.noise-overlay {
+    position: fixed;           /* Stays behind everything */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;             /* Covers the viewport */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat; /* Typically better for noise patterns */
+    z-index: -1;
+    pointer-events: none;      /* Prevents it from blocking clicks */
+}

@@ -1,0 +1,26 @@
+
+.heading{
+    font-family: "Outfit", sans-serif;
+    font-weight: 900;
+    color: #E43D12;
+    margin-left: 30px;
+    margin-top: 80px;
+    
+}
+.abt-text{
+    color: black;
+}
+.animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+.animation-text{
+    display: inline-flex;
+    font-family: "Roboto Flex", sans-serif;
+   font-size: 30px;
+    color: #E43D12;
+   padding: 5px;
+   border-radius: 4px;
+}

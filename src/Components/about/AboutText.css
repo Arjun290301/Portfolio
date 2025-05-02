@@ -1,0 +1,26 @@
+.about-content{
+  margin-bottom: 80px;
+}
+
+.scroll-reveal {
+    margin: 20px 0;
+  }
+  
+  .scroll-reveal-text {
+    margin: 30px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.5;
+    font-weight: 600;
+    
+  }
+  
+  .word {
+    display: inline-block;
+    color: #e43c13;
+    font-size: 18PX;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    line-height: -1;
+  }
