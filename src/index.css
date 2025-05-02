@@ -1,6 +1,9 @@
 /* src/index.css or src/App.css */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color:#EBE9E1; /* Global black background */
   margin: 0;
