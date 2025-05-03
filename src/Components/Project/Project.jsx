@@ -20,8 +20,8 @@ const Project = () => {
             id: 2,
             title: "E-commerce Dashboard",
             image: "https://img.freepik.com/premium-vector/online-shopping-with-smartphone-shop-shopping-cart_269039-853.jpg",
-            shortDescription: "Admin dashboard for e-commerce with analytics and inventory management.",
-            fullDescription: "An admin dashboard for e-commerce businesses featuring sales analytics, inventory management, customer data, and order processing. Includes dark/light mode and responsive design.",
+            shortDescription: "A fully responsive online store built with modern web technologies",
+            fullDescription: "A fully responsive online store built with modern web technologies. It includes product listings, shopping cart functionality, user authentication, and secure checkout. Designed for a seamless user experience with dynamic product filtering and real-time updates.",
             skills: ["React.js", "Tailwind css", "Redux", "Stripe", "Firebase"],
             preview: "https://eshop-firebase.vercel.app/",
             github: "https://github.com/Arjun290301/E-COMweb"
