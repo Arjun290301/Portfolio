@@ -1,33 +1,33 @@
 /* Main Container */
 .skill-container {
   display: flex;
-  flex-direction: row;
-  min-height: 85vh;
+  flex-wrap: wrap;
+
   align-items: center;
-  justify-content: center;
-  padding: 15px;
-  gap: 30px;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
 }
 
 /* Orbit Container (Left Side) */
 .orbit-container {
   width: 100%;
-  max-width: 350px;
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 350px;
+  height: 400px;
   margin: 0 auto;
 }
 
 /* Skills Percentage Container (Right Side) */
 .skills-percentage-container {
   width: 100%;
-  max-width: 380px;
+  max-width: 600px;
   height: auto;
   margin: 0 auto;
-  padding: 18px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -38,19 +38,14 @@
   color: #E43D12;
   font-family: "Outfit", sans-serif;
   text-align: center;
-  margin: 0 15px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  flex-grow: 1;
+  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .skills-list {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .skill-item {
@@ -61,18 +56,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .skill-icon {
   color: #E43D12;
   font-size: 0.8rem;
-  width: 18px;
+  width: 20px;
 }
 
 .skill-name {
   flex-grow: 1;
-  margin-left: 8px;
+  margin-left: 10px;
   color: #E43D12;
   font-family: "Outfit", sans-serif;
   font-size: 0.8rem;
@@ -82,31 +77,36 @@
   color: #E43D12;
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 0.8rem;
 }
 
 .progress-bar {
   width: 100%;
-  height: 6px;
+  height: 8px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
   background: #E43D12;
-  border-radius: 3px;
+  border-radius: 4px;
   animation: progress 1.5s ease-out forwards;
   transform-origin: left;
   transform: scaleX(0);
 }
 
-/* Orbit Styles */
+@keyframes progress {
+  to {
+      transform: scaleX(1);
+  }
+}
+
+/* Orbit Styles (Existing) */
 .center-text {
   font-family: "Outfit", sans-serif;
   position: absolute;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   color: #E43D12;
   z-index: 1;
@@ -114,127 +114,136 @@
 
 .orbit {
   position: absolute;
-  border: 1.5px solid rgba(228, 60, 18, 0.32);
+  border: 2px solid rgba(228, 60, 18, 0.32);
   border-radius: 50%;
   animation: spin linear infinite;
 }
 
 .icon {
   position: absolute;
-  top: -12px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Orbit Sizes - Reduced sizes */
-.orbit-1 { width: 80px; height: 80px; animation-duration: 10s; }
-.orbit-2 { width: 120px; height: 120px; animation-duration: 12s; animation-direction: reverse; }
-.orbit-3 { width: 160px; height: 160px; animation-duration: 15s; }
-.orbit-4 { width: 200px; height: 200px; animation-duration: 18s; animation-direction: reverse; }
-.orbit-5 { width: 240px; height: 240px; animation-duration: 20s; }
-.orbit-6 { width: 280px; height: 280px; animation-duration: 22s; animation-direction: reverse; }
-
-/* Carousel Styles */
-.carousel-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.nav-arrow {
-  background: rgba(228, 61, 18, 0.2);
-  border: none;
-  color: #E43D12;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-}
-
-.carousel-content {
-  position: relative;
-  overflow: hidden;
-  height: 250px;
-}
-
-/* Animation keyframes remain the same */
-@keyframes progress {
-  to {
-    transform: scaleX(1);
-  }
-}
+/* Orbit Sizes */
+.orbit-1 { width: 100px; height: 100px; animation-duration: 10s; }
+.orbit-2 { width: 150px; height: 150px; animation-duration: 12s; animation-direction: reverse; }
+.orbit-3 { width: 200px; height: 200px; animation-duration: 15s; }
+.orbit-4 { width: 250px; height: 250px; animation-duration: 18s; animation-direction: reverse; }
+.orbit-5 { width: 300px; height: 300px; animation-duration: 20s; }
+.orbit-6 { width: 350px; height: 350px; animation-duration: 22s; animation-direction: reverse; }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
+/* Responsive Design */
+@media (min-width: 992px) {
+  .skill-container {
+      flex-wrap: nowrap;
+      padding: 40px;
+  }
+  
+  .orbit-container {
+      height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .orbit-container {
+      height: 300px;
+  }
+  
+  .orbit-1 { width: 80px; height: 80px; }
+  .orbit-2 { width: 120px; height: 120px; }
+  .orbit-3 { width: 160px; height: 160px; }
+  .orbit-4 { width: 200px; height: 200px; }
+  .orbit-5 { width: 240px; height: 240px; }
+  .orbit-6 { width: 280px; height: 280px; }
+}
+/* Carousel Styles */
+.carousel-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-arrow {
+  background: rgba(228, 61, 18, 0.2);
+  border: none;
+  color: #E43D12;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.nav-arrow:hover {
+  background: rgba(228, 61, 18, 0.4);
+  transform: scale(1.1);
+}
+
+.skills-title {
+  color: #E43D12;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  margin: 0 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel-content.right {
+  animation: slideInRight 0.5s ease-out;
+}
+
+.carousel-content.left {
+  animation: slideInLeft 0.5s ease-out;
+}
+
 @keyframes slideInRight {
   from {
-    opacity: 0;
-    transform: translateX(50px);
+      opacity: 0;
+      transform: translateX(50px);
   }
   to {
-    opacity: 1;
-    transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
   }
 }
 
 @keyframes slideInLeft {
   from {
-    opacity: 0;
-    transform: translateX(-50px);
+      opacity: 0;
+      transform: translateX(-50px);
   }
   to {
-    opacity: 1;
-    transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
   }
 }
 
-/* Responsive Design */
-@media (min-width: 992px) {
-  .skill-container {
-    flex-wrap: nowrap;
-    padding: 30px;
-  }
-  
-  .orbit-container {
-    height: 350px;
-  }
+.skills-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .skill-container {
-    flex-direction: column;
-  }
-  
-  .orbit-container {
-    height: 280px;
-    max-width: 280px;
-  }
-  
-  .skills-percentage-container {
-    max-width: 320px;
-  }
-  
-  .orbit-1 { width: 60px; height: 60px; }
-  .orbit-2 { width: 90px; height: 90px; }
-  .orbit-3 { width: 120px; height: 120px; }
-  .orbit-4 { width: 150px; height: 150px; }
-  .orbit-5 { width: 180px; height: 180px; }
-  .orbit-6 { width: 210px; height: 210px; }
-  
-  .carousel-content {
-    height: 220px;
-  }
-  
-  .skills-title {
-    font-size: 1rem;
-  }
-}
+/* Rest of your existing CSS remains the same */

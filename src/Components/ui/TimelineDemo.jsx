@@ -109,13 +109,13 @@ efficiency.`
           width: 100%;
           font-family: "Outfit", sans-serif;
           overflow: hidden;
-          padding: 3rem 0;
+          padding: 4rem 0;
         }
         
         .timeline-wrapper {
-          max-width: 1000px;
+          max-width: 1200px;
           margin: 0 auto;
-          padding: 1.5rem 1rem;
+          padding: 2rem 1rem;
           position: relative;
         }
         
@@ -125,7 +125,7 @@ efficiency.`
           left: 50%;
           top: 0;
           bottom: 0;
-          width: 3px;
+          width: 4px;
           transform: translateX(-50%);
           z-index: 10;
           background-color: rgba(228, 60, 19, 0.2);
@@ -133,7 +133,7 @@ efficiency.`
         
         .timeline-progress {
           position: absolute;
-          width: 3px;
+          width: 4px;
           background-color: #e43c13;
           top: 0;
           left: 0;
@@ -142,9 +142,9 @@ efficiency.`
         
         /* Timeline sections */
         .timeline-section {
-          margin-bottom: 8rem;
+          margin-bottom: 10rem;
           position: relative;
-          min-height: 250px;
+          min-height: 300px;
           perspective: 1000px;
         }
         
@@ -152,22 +152,22 @@ efficiency.`
         .timeline-section-content {
           display: grid;
           grid-template-columns: 1fr 1fr;
-          gap: 1.5rem;
+          gap: 2rem;
           position: relative;
         }
         
         .timeline-section-left {
           text-align: right;
-          padding-right: 2.5rem;
+          padding-right: 3rem;
         }
         
         .timeline-section-right {
-          padding-left: 2.5rem;
+          padding-left: 3rem;
         }
         
         /* Large number */
         .timeline-number {
-          font-size: 5rem;
+          font-size: 9rem;
           font-weight: 700;
           color: #e43c13;
           opacity: 0.9;
@@ -179,32 +179,42 @@ efficiency.`
         .tagline {
           color: #e43c13;
           text-transform: uppercase;
-          font-size: 0.7rem;
+          font-size: 0.9rem;
           font-weight: 400;
           letter-spacing: 1px;
-          margin-bottom: 0.4rem;
+          margin-bottom: 0.5rem;
         }
         
         .heading {
-          font-size: 1.75rem;
+          font-size: 3rem;
           font-weight: 600;
           margin-top: 0;
-          margin-bottom: 0.8rem;
+          margin-bottom: 1rem;
         }
         
         /* Text content */
         .timeline-content {
-          color:rgb(0, 0, 0);
-          line-height: 1.5;
+        font-size:1.2rem;
+        color:rgb(0, 0, 0);
+          line-height: 1.6;
           font-weight: 300;
-          font-size: 0.95rem;
         }
         
-        /* Bullet points */
-        p {
-          font-size: 0.85rem;
-          line-height: 1.4;
-          margin-bottom: 0.8rem;
+        /* Button */
+        .change-variant-btn {
+          background-color: #6d28d9;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+          font-size: 0.875rem;
+          cursor: pointer;
+          margin-top: 1.5rem;
+          transition: all 0.3s ease;
+        }
+        
+        .change-variant-btn:hover {
+          background-color: #5b21b6;
         }
         
         /* Dot indicator */
@@ -212,17 +222,18 @@ efficiency.`
           position: absolute;
           left: 50%;
           transform: translateX(-50%);
-          width: 12px;
-          height: 12px;
+          width: 16px;
+          height: 16px;
           border-radius: 50%;
           background-color: #e43c13;
+          
           z-index: 20;
         }
         
         /* Animation classes */
         .fade-in {
           opacity: 0;
-          transform: translateY(15px);
+          transform: translateY(20px);
           transition: opacity 0.6s ease, transform 0.6s ease;
         }
         
@@ -260,7 +271,7 @@ efficiency.`
           .timeline-section-left,
           .timeline-section-right {
             text-align: left;
-            padding: 0 0 0 2.5rem;
+            padding: 0 0 0 3rem;
           }
           
           .timeline-line-container {
@@ -269,19 +280,6 @@ efficiency.`
           
           .timeline-dot {
             left: 1rem;
-          }
-          
-          .timeline-section {
-            margin-bottom: 6rem;
-            min-height: 200px;
-          }
-          
-          .timeline-number {
-            font-size: 4rem;
-          }
-          
-          .heading {
-            font-size: 1.5rem;
           }
         }
       `}</style>
@@ -323,6 +321,8 @@ efficiency.`
                           <p>{item.pt1}</p>
                           <p>{item.pt2}</p>
                           <p>{item.pt3}</p>
+
+
                         </div>
                       </div>
                     </>
@@ -337,6 +337,7 @@ efficiency.`
                           <p>{item.pt1}</p>
                           <p>{item.pt2}</p>
                           <p>{item.pt3}</p>
+
                         </div>
                       </div>
                       <div className="timeline-section-right"></div>

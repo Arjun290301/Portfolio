@@ -29,7 +29,7 @@ const Home = () => {
                         radius={300}
                         falloff='linear'
                         style={{
-                            fontSize: '5.3rem',
+                            fontSize: '9.3rem',
                             textAlign: 'center',
                             width: '100%'  // Ensures the text container takes full width for centering to work
                         }}
