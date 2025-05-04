@@ -282,6 +282,21 @@ efficiency.`
             left: 1rem;
           }
         }
+        @media(max-width:825px){
+  .timeline-content {
+        font-size:1rem;
+        }
+        .heading {
+          font-size: 2rem;
+         
+        }
+           .tagline {
+        
+          font-size: 0.9rem;
+          
+        }
+    
+  }
       `}</style>
 
       <div className="timeline-container" ref={containerRef}>
