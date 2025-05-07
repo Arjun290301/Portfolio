@@ -28,11 +28,7 @@ const Home = () => {
                         containerRef={containerRef}
                         radius={300}
                         falloff='linear'
-                        style={{
-                            fontSize: '9.3rem',
-                            textAlign: 'center',
-                            width: '100%'  // Ensures the text container takes full width for centering to work
-                        }}
+
                     />
                 </div>
             </div>

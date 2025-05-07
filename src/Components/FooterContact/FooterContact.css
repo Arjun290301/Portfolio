@@ -181,3 +181,73 @@
     font-size: 0.8rem;
     margin-top: 2.5rem;
   }
+  /* Media Query for Footer Contact - screens below 600px */
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 2rem 1.5rem 0rem 1.5rem;
+  }
+  
+  .footer-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  
+  .footer-highlight {
+    font-size: 2.5rem;
+  }
+  
+  .footer-description {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+  }
+  
+  .footer-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .contact-icon {
+    padding: 0.15rem;
+  }
+  
+  .contact-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .form-textarea {
+    min-height: 80px;
+  }
+  
+  .submit-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+  
+  .submit-button svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .success-message,
+  .error-message {
+    font-size: 0.75rem;
+  }
+  
+  .footer-copyright {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+  }
+}
