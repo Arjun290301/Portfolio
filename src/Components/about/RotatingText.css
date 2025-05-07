@@ -44,3 +44,8 @@
   .text-rotate-space {
     white-space: pre;
   }
+  @media(max-width:475px){
+    .text-rotate {
+      font-size: 20px;
+    }
+  }

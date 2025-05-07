@@ -274,7 +274,7 @@ efficiency.`
             padding: 0 0 0 3rem;
           }
           .timeline-number{
-          margin-left:200px
+          padding-left:100px
           }
           
           .timeline-line-container {
@@ -327,7 +327,7 @@ efficiency.`
   }
   
   .timeline-number {
-    font-size: 6rem;
+    font-size: 5rem;
     opacity: 0.7;
     top: -20px;
   }
@@ -367,10 +367,19 @@ efficiency.`
   /* Adjust large number positioning */
   .timeline-section:nth-child(odd) .timeline-number,
   .timeline-section:nth-child(even) .timeline-number {
-    left: auto;
-    right: 0;
+    left: -1;
+    right: 1;
     transform: translateX(0);
   }
+}
+
+@media screen and (max-width:450px){
+  .timeline-number {
+    font-size: 3rem;
+    opacity: 0.7;
+    top: -20px;
+  }
+    .timeline-number-
 }
       `}</style>
 

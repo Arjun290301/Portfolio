@@ -255,5 +255,10 @@
   flex-direction: column;
   gap: 20px;
 }
+@media(max-width:500px){
+  .skills-percentage-container{
+    max-width: 300px;
+  }
+}
 
 /* Rest of your existing CSS remains the same */
