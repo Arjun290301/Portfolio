@@ -2,6 +2,7 @@ import React from 'react'
 import AboutText from './AboutText'
 import "./About.css"
 import RotatingText from './RotatingText'
+import { IoDocumentTextOutline } from "react-icons/io5";
 const About = () => {
     return <>
         <div className="about-content">
@@ -39,6 +40,19 @@ const About = () => {
 
                     />
 
+
+                </div>
+
+                <div className="resume-button-container">
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="resume-button"
+                    >
+                        <IoDocumentTextOutline className="resume-icon" />
+                        <span>View Resume</span>
+                    </a>
                 </div>
 
             </div>
